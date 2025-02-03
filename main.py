@@ -14,6 +14,7 @@ def run_code():
 
 
 # This line executes the above function every day at 2pm CEST (my timezone)
+# (13:00 is set to make it work at the desired time in the hosting service I use)
 schedule.every().day.at("13:00").do(run_code)
 
 # And now we wait :)
